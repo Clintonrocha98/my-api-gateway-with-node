@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "node --watch --no-warnings index.js"
+    "dev": "node --watch --no-warnings index.js",
+    "api1": "json-server --watch ./fake-api/users.json --port 3333",
+    "api2": "json-server --watch ./fake-api/orders.json --port 4444",
+    "api3": "json-server --watch ./fake-api/products.json --port 5555"
   },
   "dependencies": {
-    "express": "^4.19.2",
     "cors": "^2.8.5",
+    "express": "^4.19.2",
     "helmet": "^7.1.0",
+    "http-proxy-middleware": "^3.0.0",
+    "json-server": "1.0.0-beta.2",
     "morgan": "^1.10.0"
   },
   "keywords": [],

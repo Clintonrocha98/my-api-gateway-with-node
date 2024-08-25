@@ -1,0 +1,6 @@
+{
+  "orders": [
+    { "id": 1, "item": "Laptop", "quantity": 1 },
+    { "id": 2, "item": "Phone", "quantity": 2 }
+  ]
+}
